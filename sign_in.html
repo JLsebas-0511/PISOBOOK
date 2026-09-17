@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign in | PISOBOOK</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+	<div class="auth-shell">
+		<header class="auth-header">
+			<a class="brand" href="index.html" aria-label="PISOBOOK home">
+				<span class="brand-mark">P</span>
+				<span class="brand-name">PISOBOOK</span>
+			</a>
+		</header>
+
+		<main class="auth-main">
+			<p class="auth-kicker">WELCOME BACK</p>
+			<h1 class="auth-title">Your local finds are <em>waiting.</em></h1>
+			<p class="auth-copy">Log in to keep up with the small businesses and places you love.</p>
+
+			<form class="auth-form" action="index.html" method="get">
+				<div class="form-field">
+					<label for="signin-email">Email address</label>
+					<input id="signin-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+				</div>
+				<div class="form-field">
+					<label for="signin-password">Password</label>
+					<input id="signin-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+				</div>
+				<div class="form-helper">
+					<label><input type="checkbox" name="remember"> Remember me</label>
+					<a class="form-link" href="#forgot-password">Forgot password?</a>
+				</div>
+				<button class="primary-button" type="submit">Log in to PISOBOOK</button>
+			</form>
+
+			<p class="auth-switch">New to PISOBOOK? <a href="Profile/profile.html">Create a profile</a></p>
+		</main>
+	</div>
+</body>
+</html>

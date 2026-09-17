@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register your business on PISOBOOK.">
+    <title>Seller registration | PISOBOOK</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="auth-page seller-auth-page">
+    <div class="auth-shell">
+        <header class="auth-header">
+            <a class="brand" href="../../index.html" aria-label="PISOBOOK home">
+                <span class="brand-mark">P</span>
+                <span class="brand-name">PISOBOOK</span>
+            </a>
+            <a class="auth-back" href="../../Profile/create_acc.html">← User signup</a>
+        </header>
+
+        <main class="auth-main">
+            <p class="auth-kicker">SELLER REGISTRATION</p>
+            <h1 class="auth-title">Put your business <em>on the map.</em></h1>
+            <p class="auth-copy">Tell us about your business and upload the documents that verify you are ready to operate.</p>
+
+            <div class="seller-note"><span>✦</span><p>Seller accounts are reviewed before their listing goes live.</p></div>
+
+            <form class="auth-form seller-form" id="seller-form">
+                <div class="form-field">
+                    <label for="business-name">Business name</label>
+                    <input id="business-name" name="business-name" type="text" placeholder="Sinta Ceramics" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="business-category">Category</label>
+                        <select id="business-category" name="category" required>
+                            <option value="">Choose one</option>
+                            <option>Food</option>
+                            <option>Style</option>
+                            <option>Home</option>
+                            <option>Services</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="business-phone">Business phone</label>
+                        <input id="business-phone" name="business-phone" type="tel" placeholder="09XX XXX XXXX" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="business-address">Business address</label>
+                    <input id="business-address" name="business-address" type="text" placeholder="Street, Barangay, Municipality, City/Province" required>
+                </div>
+                <div class="form-field">
+                    <label for="owner-name">Owner or authorized representative</label>
+                    <input id="owner-name" name="owner-name" type="text" placeholder="Full legal name" required>
+                </div>
+                <div class="form-field">
+                    <label for="owner-email">Owner email address</label>
+                    <input id="owner-email" name="owner-email" type="email" placeholder="you@example.com" required>
+                </div>
+
+                <fieldset class="document-fields">
+                    <legend>Verification documents</legend>
+                    <p>Upload clear photos or PDF files. These are reviewed privately and are not shown on your public profile.</p>
+                    <label class="document-field" for="business-permit"><span class="document-icon">01</span><span><strong>Business permit</strong><small>Required · JPG, PNG, or PDF</small></span><input id="business-permit" name="business-permit" type="file" accept="image/png, image/jpeg, application/pdf" required></label>
+                    <label class="document-field" for="barangay-clearance"><span class="document-icon">02</span><span><strong>Barangay clearance</strong><small>Required · JPG, PNG, or PDF</small></span><input id="barangay-clearance" name="barangay-clearance" type="file" accept="image/png, image/jpeg, application/pdf" required></label>
+                    <label class="document-field" for="business-license"><span class="document-icon">03</span><span><strong>Operating license</strong><small>Required · JPG, PNG, or PDF</small></span><input id="business-license" name="business-license" type="file" accept="image/png, image/jpeg, application/pdf" required></label>
+                </fieldset>
+
+                <button class="primary-button" type="submit">Submit seller application</button>
+                <p class="form-status" id="seller-status" role="status" aria-live="polite"></p>
+            </form>
+        </main>
+    </div>
+    <script src="seller_create.js"></script>
+</body>
+</html>

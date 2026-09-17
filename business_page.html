@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your PISOBOOK business profile.">
+    <title>Business dashboard | PISOBOOK</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="app business-app">
+        <header class="app-header business-header">
+            <a class="brand" href="../../index.html" aria-label="PISOBOOK home">
+                <span class="brand-mark">P</span>
+                <span class="brand-name">PISOBOOK</span>
+            </a>
+            <a class="profile-avatar business-avatar" href="../../Profile/profile.html" aria-label="Open profile">JM</a>
+        </header>
+
+        <main class="business-main">
+            <section class="business-welcome" aria-labelledby="business-title">
+                <p class="eyebrow accent-eyebrow">SELLER SPACE</p>
+                <h1 id="business-title">Grow your local<br><em>following.</em></h1>
+                <p>Keep your business profile fresh and stay close to the people discovering you.</p>
+            </section>
+
+            <section class="business-summary" aria-label="Business overview">
+                <div class="business-summary-topline">
+                    <div class="business-logo">SC</div>
+                    <div>
+                        <p class="eyebrow">YOUR BUSINESS</p>
+                        <h2>Sinta Ceramics</h2>
+                        <span class="business-location">⌖ Mandaluyong · Home</span>
+                    </div>
+                    <button class="icon-button dashboard-more" type="button" aria-label="More business options">•••</button>
+                </div>
+                <div class="business-stats">
+                    <div><strong>248</strong><span>Profile views</span></div>
+                    <div><strong>36</strong><span>Saved this month</span></div>
+                    <div><strong>4.9</strong><span>Rating</span></div>
+                </div>
+            </section>
+
+            <section class="business-section" aria-labelledby="listing-title">
+                <div class="section-heading business-section-heading">
+                    <div>
+                        <p class="eyebrow accent-eyebrow">YOUR PRESENCE</p>
+                        <h2 id="listing-title">Business listing</h2>
+                    </div>
+                    <button class="text-button" type="button" id="edit-listing">Edit</button>
+                </div>
+                <article class="listing-card">
+                    <div class="listing-image" aria-label="Sinta Ceramics interior" role="img"></div>
+                    <div class="listing-content">
+                        <div class="listing-heading"><h3>Sinta Ceramics</h3><span class="status-pill">Live</span></div>
+                        <p>Hand-thrown pieces for slow mornings and everyday rituals.</p>
+                        <div class="listing-meta"><span>Home</span><span>⌖ Mandaluyong</span></div>
+                        <button class="view-link" type="button">View public profile &rarr;</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="business-section" aria-labelledby="activity-title">
+                <div class="section-heading business-section-heading">
+                    <div>
+                        <p class="eyebrow accent-eyebrow">STAY IN THE LOOP</p>
+                        <h2 id="activity-title">Recent activity</h2>
+                    </div>
+                    <button class="text-button" type="button" id="view-activity">View all</button>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-row"><span class="activity-icon">♡</span><p><strong>Common Room Coffee</strong> saved your business.</p><time>Today</time></div>
+                    <div class="activity-row"><span class="activity-icon">✦</span><p>Your profile appeared in <strong>12 searches</strong>.</p><time>Yesterday</time></div>
+                    <div class="activity-row"><span class="activity-icon">✎</span><p>Keep your hours and details up to date.</p><time>Aug 24</time></div>
+                </div>
+            </section>
+
+            <button class="business-add-button" type="button" id="add-business"><span>+</span><strong>Add another business</strong><small>Manage more local places from one account</small></button>
+            <p class="business-status" id="business-status" role="status" aria-live="polite"></p>
+        </main>
+
+        <nav class="bottom-nav" aria-label="Primary navigation">
+            <a class="nav-item active" href="business_page.html"><span aria-hidden="true">⌂</span><small>Dashboard</small></a>
+            <a class="nav-item" href="post.html"><span aria-hidden="true">✎</span><small>Post</small></a>
+            <button class="post-button" type="button" aria-label="Add a business"><span aria-hidden="true">+</span></button>
+            <a class="nav-item" href="applicants.html"><span aria-hidden="true">♡</span><small>Activity</small></a>
+            <a class="nav-item" href="../../Profile/profile.html"><span aria-hidden="true">◎</span><small>Profile</small></a>
+        </nav>
+    </div>
+    <script src="business_page.js"></script>
+</body>
+</html>

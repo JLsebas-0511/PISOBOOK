@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search local businesses on PISOBOOK.">
+    <title>Search | PISOBOOK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app search-app">
+        <header class="app-header search-header">
+            <a class="brand" href="index.html" aria-label="PISOBOOK home">
+                <span class="brand-mark">P</span>
+                <span class="brand-name">PISOBOOK</span>
+            </a>
+            <a class="profile-avatar search-profile" href="Profile/profile.html" aria-label="Your profile">JM</a>
+        </header>
+
+        <main class="search-main">
+            <section class="search-hero" aria-labelledby="search-title">
+                <p class="eyebrow accent-eyebrow">EXPLORE YOUR NEIGHBORHOOD</p>
+                <h1 id="search-title">Find something<br><em>worth wandering to.</em></h1>
+                <p class="search-copy">Search local shops, makers, and services shared by your community.</p>
+            </section>
+
+            <section class="search-section search-page-field" aria-label="Search businesses">
+                <label class="search-box search-box-large">
+                    <span aria-hidden="true">&#9906;</span>
+                    <input id="search-input" type="search" placeholder="Try “coffee” or “Mandaluyong”" autocomplete="off">
+                    <button class="clear-search" type="button" aria-label="Clear search">&times;</button>
+                </label>
+            </section>
+
+            <section class="quick-searches" aria-labelledby="quick-title">
+                <div class="section-heading">
+                    <h2 id="quick-title">Popular near you</h2>
+                    <span class="result-count" id="result-count">3 places</span>
+                </div>
+                <div class="search-chips" id="category-list">
+                    <button class="category active" type="button" data-category="All"><span>✦</span>All</button>
+                    <button class="category" type="button" data-category="Food"><span>☕</span>Food</button>
+                    <button class="category" type="button" data-category="Style"><span>✺</span>Style</button>
+                    <button class="category" type="button" data-category="Home"><span>⌂</span>Home</button>
+                    <button class="category" type="button" data-category="Services"><span>✎</span>Services</button>
+                </div>
+            </section>
+
+            <section class="search-results" aria-labelledby="results-title">
+                <div class="section-heading feed-heading">
+                    <div>
+                        <p class="eyebrow accent-eyebrow">LOCAL FINDS</p>
+                        <h2 id="results-title">Results for you</h2>
+                    </div>
+                    <button class="filter-button" type="button" aria-label="Filter results"><span aria-hidden="true">&#9776;</span></button>
+                </div>
+                <div class="result-list" id="result-list"></div>
+                <p class="empty-state" id="empty-state" hidden>Nothing here yet. Try a different search.</p>
+            </section>
+        </main>
+
+        <nav class="bottom-nav" aria-label="Primary navigation">
+            <a class="nav-item" href="index.html"><span aria-hidden="true">⌂</span><small>Discover</small></a>
+            <a class="nav-item active" href="search.html"><span aria-hidden="true">⌕</span><small>Explore</small></a>
+            <button class="post-button" type="button" aria-label="Add a business"><span aria-hidden="true">+</span></button>
+            <button class="nav-item" type="button"><span aria-hidden="true">♡</span><small>Saved</small></button>
+            <a class="nav-item" href="Profile/profile.html"><span aria-hidden="true">◎</span><small>Profile</small></a>
+        </nav>
+    </div>
+    <script src="api.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

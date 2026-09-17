@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create a profile | PISOBOOK</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body class="auth-page">
+	<div class="auth-shell">
+		<header class="auth-header">
+			<a class="brand" href="../index.html" aria-label="PISOBOOK home">
+				<span class="brand-mark">P</span>
+				<span class="brand-name">PISOBOOK</span>
+			</a>
+		</header>
+
+		<main class="auth-main">
+			<p class="auth-kicker">JOIN THE COMMUNITY</p>
+			<h1 class="auth-title">Make your neighborhood <em>yours.</em></h1>
+			<p class="auth-copy">Create a profile to discover and save the local places you love.</p>
+
+			<div class="profile-intro">
+				<div class="profile-badge">P</div>
+				<div>
+					<strong>Your PISOBOOK profile</strong>
+					<span>Personalize your local discovery feed.</span>
+				</div>
+			</div>
+
+			<form class="auth-form" action="../index.html" method="get">
+				<div class="form-field">
+					<label for="profile-picture">Profile picture</label>
+					<div class="picture-picker">
+						<label class="picture-preview" id="picture-preview" for="profile-picture" aria-label="Add a profile picture">
+							<span aria-hidden="true">P</span>
+							<b aria-hidden="true">+</b>
+						</label>
+						<input class="picture-input" id="profile-picture" name="profile-picture" type="file" accept="image/png, image/jpeg, image/webp">
+						<small class="field-note">Add a JPG, PNG, or WebP image up to 2 MB.</small>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-field">
+						<label for="profile-first-name">First name</label>
+						<input id="profile-first-name" name="first-name" type="text" placeholder="Erylle" autocomplete="given-name" required>
+					</div>
+					<div class="form-field">
+						<label for="profile-last-name">Last name</label>
+						<input id="profile-last-name" name="last-name" type="text" placeholder="Ortega" autocomplete="family-name" required>
+					</div>
+				</div>
+				<div class="form-field">
+					<label for="profile-email">Email address</label>
+					<input id="profile-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+				</div>
+				<div class="form-field">
+					<label for="profile-phone">Phone number</label>
+					<input id="profile-phone" name="phone" type="tel" placeholder="09XX XXX XXXX" autocomplete="tel" inputmode="tel" required>
+				</div>
+				<div class="form-field">
+					<label for="profile-address">Specific address</label>
+					<input id="profile-address" name="address" type="text" placeholder="Street, Barangay, Municipality, City/Province" autocomplete="street-address" required>
+					<div class="address-actions">
+						<small></small>
+						<button class="map-button" id="map-address" type="button">Open Google Maps <span aria-hidden="true">&rarr;</span></button>
+					</div>
+					<small class="address-status" id="address-status" aria-live="polite"></small>
+				</div>
+				<div class="form-field">
+					<label for="profile-password">Create a password</label>
+					<input id="profile-password" name="password" type="password" placeholder="Create a strong password" minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}" title="Use at least 8 characters, including one capital letter, one number, and one symbol(!,@,#,$,%,&,*)" autocomplete="new-password" required>
+					<small class="field-note">8+ characters, 1 capital letter, 1 number, and 1 symbol.</small>
+				</div>
+				<div class="form-field">
+					<label for="profile-password-confirm">Repeat password</label>
+					<input id="profile-password-confirm" name="password-confirm" type="password" placeholder="Repeat your password" autocomplete="new-password" required>
+				</div>
+				<button class="primary-button" type="submit">Create my profile</button>
+				<p class="form-status" id="profile-status" aria-live="polite"></p>
+			</form>
+
+			<p class="auth-switch">Are you a business owner? <a href="../.vscode/business/seller_create.html">Register as a seller</a></p>
+			<p class="auth-switch">Already have an account? <a href="../login.html">Log in</a></p>
+		</main>
+	</div>
+	<script src="profile.js"></script>
+</body>
+</html>

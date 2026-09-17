@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your PISOBOOK profile and previous local finds.">
+    <title>Profile | PISOBOOK</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="app profile-app">
+        <header class="app-header profile-header">
+            <a class="brand" href="../index.html" aria-label="PISOBOOK home">
+                <span class="brand-mark">P</span>
+                <span class="brand-name">PISOBOOK</span>
+            </a>
+            <button class="icon-button notification-button" type="button" aria-label="Notifications">
+                <span aria-hidden="true">&#9825;</span>
+                <i></i>
+            </button>
+        </header>
+
+        <main class="profile-main">
+            <section class="profile-hero" aria-labelledby="profile-title">
+                <div class="profile-large-avatar" aria-hidden="true">JM</div>
+                <div class="profile-identity">
+                    <p class="eyebrow accent-eyebrow">YOUR PISOBOOK</p>
+                    <h1 id="profile-title">Julianne M.</h1>
+                    <p>Local finder · Mandaluyong</p>
+                </div>
+                <button class="edit-profile" type="button" id="edit-profile">Edit profile</button>
+            </section>
+
+            <section class="profile-stats" aria-label="Profile activity">
+                <div><strong>12</strong><span>Saved</span></div>
+                <div><strong>08</strong><span>Visited</span></div>
+                <div><strong>03</strong><span>Shared</span></div>
+            </section>
+
+            <section class="profile-section" aria-labelledby="previous-title">
+                <div class="section-heading profile-section-heading">
+                    <div>
+                        <p class="eyebrow accent-eyebrow">YOUR TRAIL</p>
+                        <h2 id="previous-title">Previous stores</h2>
+                    </div>
+                    <button class="text-button" type="button" id="view-all">View all</button>
+                </div>
+                <div class="previous-stores" id="previous-stores">
+                    <article class="previous-store">
+                        <div class="previous-store-image previous-store-image-one" role="img" aria-label="Sinta Ceramics"></div>
+                        <div class="previous-store-content">
+                            <span class="result-category">Home</span>
+                            <h3>Sinta Ceramics</h3>
+                            <p>Visited Aug 24, 2026</p>
+                            <button class="view-link" type="button">View again &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="previous-store">
+                        <div class="previous-store-image previous-store-image-two" role="img" aria-label="Common Room Coffee"></div>
+                        <div class="previous-store-content">
+                            <span class="result-category">Food</span>
+                            <h3>Common Room Coffee</h3>
+                            <p>Visited Aug 18, 2026</p>
+                            <button class="view-link" type="button">View again &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="previous-store">
+                        <div class="previous-store-image previous-store-image-three" role="img" aria-label="Sunday Market Finds"></div>
+                        <div class="previous-store-content">
+                            <span class="result-category">Style</span>
+                            <h3>Sunday Market Finds</h3>
+                            <p>Visited Aug 09, 2026</p>
+                            <button class="view-link" type="button">View again &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="profile-section settings-section" aria-labelledby="settings-title">
+                <div class="section-heading profile-section-heading">
+                    <div>
+                        <p class="eyebrow accent-eyebrow">MAKE IT YOURS</p>
+                        <h2 id="settings-title">Settings</h2>
+                    </div>
+                </div>
+                <div class="settings-list">
+                    <button class="settings-row" type="button" data-setting="notifications">
+                        <span class="settings-icon" aria-hidden="true">♡</span>
+                        <span class="settings-copy"><strong>Notifications</strong><small>New finds and local updates</small></span>
+                        <span class="toggle is-on" aria-hidden="true"><i></i></span>
+                    </button>
+                    <button class="settings-row" type="button" data-setting="location">
+                        <span class="settings-icon" aria-hidden="true">⌖</span>
+                        <span class="settings-copy"><strong>Location access</strong><small>Show places close to you</small></span>
+                        <span class="toggle is-on" aria-hidden="true"><i></i></span>
+                    </button>
+                    <button class="settings-row" type="button" data-setting="private">
+                        <span class="settings-icon" aria-hidden="true">◎</span>
+                        <span class="settings-copy"><strong>Private profile</strong><small>Hide your activity from others</small></span>
+                        <span class="toggle" aria-hidden="true"><i></i></span>
+                    </button>
+                    <a class="settings-row settings-link" href="mailto:hello@pisobook.local">
+                        <span class="settings-icon" aria-hidden="true">✎</span>
+                        <span class="settings-copy"><strong>Help & feedback</strong><small>Tell us how PISOBOOK can improve</small></span>
+                        <span class="settings-arrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+                <p class="profile-status" id="profile-status" role="status" aria-live="polite"></p>
+            </section>
+        </main>
+
+        <nav class="bottom-nav" aria-label="Primary navigation">
+            <a class="nav-item" href="../index.html"><span aria-hidden="true">⌂</span><small>Discover</small></a>
+            <a class="nav-item" href="../search.html"><span aria-hidden="true">⌕</span><small>Explore</small></a>
+            <button class="post-button" type="button" aria-label="Add a business"><span aria-hidden="true">+</span></button>
+            <button class="nav-item" type="button"><span aria-hidden="true">♡</span><small>Saved</small></button>
+            <a class="nav-item active" href="profile.html"><span aria-hidden="true">◎</span><small>Profile</small></a>
+        </nav>
+    </div>
+    <script src="../api.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover independent stores, makers, and services near you.">
+    <title>PISOBOOK | Discover local businesses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <a class="brand" href="#home" aria-label="PISOBOOK home">
+                <span class="brand-mark">P</span>
+                    <span class="brand-name">PISOBOOK</span>
+                </a>
+                <button class="icon-button notification-button" type="button" aria-label="Notifications">
+                    <span aria-hidden="true">&#9825;</span>
+                    <i></i>
+                </button>
+            </header>
+
+            <main id="home">
+                <section class="intro">
+                    <div>
+                        <p class="eyebrow" id="current-date"></p>
+                        <h1>Find your next<br><em>favorite place.</em></h1>
+                        <p class="intro-copy">A living guide to the small businesses that make your neighborhood feel like home.</p>
+                    </div>
+                    <div class="profile-avatar" aria-label="Your profile">JM</div>
+                </section>
+
+                <section class="category-section" aria-label="Business categories">
+                    <div class="section-heading">
+                        <h2>Browse by vibe</h2>
+                        <button class="text-button" id="see-all" type="button">See all</button>
+                    </div>
+                    <div class="category-list" id="category-list">
+                        <button class="category active" type="button" data-category="All"><span>✦</span>All</button>
+                        <button class="category" type="button" data-category="Food"><span>☕</span>Food</button>
+                        <button class="category" type="button" data-category="Style"><span>✺</span>Style</button>
+                        <button class="category" type="button" data-category="Home"><span>⌂</span>Home</button>
+                        <button class="category" type="button" data-category="Services"><span>✎</span>Services</button>
+                    </div>
+                </section>
+
+                <section class="feed-section" aria-labelledby="feed-title">
+                    <div class="section-heading feed-heading">
+                        <div>
+                            <p class="eyebrow accent-eyebrow">CURATED FOR YOU</p>
+                            <h2 id="feed-title">Around the corner</h2>
+                        </div>
+                        <button class="filter-button" type="button" aria-label="Sort businesses"><span aria-hidden="true">&#9776;</span></button>
+                    </div>
+                    <div class="feed" id="feed"></div>
+                    <p class="empty-state" id="empty-state" hidden>No local finds match that search yet.</p>
+                </section>
+            </main>
+
+            <nav class="bottom-nav" aria-label="Primary navigation">
+                <button class="nav-item active" type="button" data-nav="home"><span aria-hidden="true">⌂</span><small>Discover</small></button>
+                <a class="nav-item" href="search.html" data-nav="explore"><span aria-hidden="true">⌕</span><small>Explore</small></a>
+                <button class="post-button" type="button" aria-label="Add a business"><span aria-hidden="true">+</span></button>
+                <button class="nav-item" type="button" data-nav="saved"><span aria-hidden="true">♡</span><small>Saved</small></button>
+                <button class="nav-item" type="button" data-nav="profile"><span aria-hidden="true">◎</span><small>Profile</small></button>
+            </nav>
+        </div>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
